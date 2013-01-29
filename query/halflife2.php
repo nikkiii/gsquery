@@ -1,4 +1,15 @@
 <?php
+/**
+ * A GSQuery subclass which implements support for Halflife 2 servers
+ * Supported:
+ * - Team Fortress 2
+ * - Left 4 Dead 2
+ * - Counter Strike: Source (UNTESTED)
+ * - HL2:DM (UNTESTED)
+ * 
+ * @author Nikki
+ *
+ */
 class Halflife2 extends GSQuery_Parent {
 	
 	private $queryproto;

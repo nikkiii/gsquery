@@ -1,6 +1,12 @@
 <?php
 require_once dirname(dirname(__FILE__)) . '/buffer.php';
 
+/**
+ * A class which implements the Source query protocol
+ *
+ * @author Nikki
+ *
+ */
 class Sourcequery extends QueryProtocol {
 	private $socket;
 	private $settings;

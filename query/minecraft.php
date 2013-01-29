@@ -1,4 +1,10 @@
 <?php
+/**
+ * A GSQuery Subclass which implements support for Minecraft servers
+ * 
+ * @author Nikki
+ *
+ */
 class Minecraft extends GSQuery_Parent {
 	private $queryproto = false;
 	private $rconproto = false;
@@ -14,6 +20,9 @@ class Minecraft extends GSQuery_Parent {
 		$this->copySettings($settings, $settings['query'], array('host', 'port'));
 		$this->queryproto = $this->initializeProtocol('gamespy4', $settings['query']);
 		if(!empty($settings['rcon'])) {
+			$settings['rcon'] += array(
+				'port' => 25575
+			);
 			$this->copySettings($settings, $settings['rcon'], array('host'));
 			$this->rconproto = $this->initializeProtocol('sourcercon', $settings['rcon']);
 		}

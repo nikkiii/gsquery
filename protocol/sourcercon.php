@@ -1,4 +1,10 @@
 <?php
+/**
+ * A class which implements the Source RCON Protocol
+ * 
+ * @author Nikki
+ *
+ */
 class Sourcercon extends RconProtocol {
 	// Sending
 	const SERVERDATA_EXECCOMMAND	= 2;

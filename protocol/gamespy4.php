@@ -1,7 +1,7 @@
 <?php
 /**
  * Gamespy 4 protocol, specifically for Minecraft
- * Note: Some code was referenced from xPaw's implementation, so most of the credit goes ot him.
+ * Note: A lot of code was referenced from xPaw's implementation, so most of the credit goes to him.
  * 
  * @author Nikki
  * @author xPaw
